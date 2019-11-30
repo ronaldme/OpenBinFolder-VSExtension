@@ -6,22 +6,15 @@
 
 using System;
 using System.ComponentModel.Design;
-using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
 using System.Runtime.InteropServices;
-using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.Win32;
 using EnvDTE80;
 using EnvDTE;
 using System.IO;
 
 namespace OpenBinFolder
 {
-   
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration("#110", "#112", "1.0")] // Info on this package for Help/About
     [Guid(OpenBinFolderPackage.PackageGuidString)]

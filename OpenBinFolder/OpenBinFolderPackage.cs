@@ -15,12 +15,12 @@ using System.IO;
 
 namespace OpenBinFolder
 {
-    [PackageRegistration(UseManagedResourcesOnly = true)]
+    [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration("#110", "#112", "1.0")] // Info on this package for Help/About
     [Guid(OpenBinFolderPackage.PackageGuidString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
     [ProvideMenuResource("Menus.ctmenu", 1)]
-    public sealed class OpenBinFolderPackage : Package
+    public sealed class OpenBinFolderPackage : AsyncPackage
     {
         /// <summary>
         /// OpenBinFolderPackage GUID string.
@@ -32,19 +32,6 @@ namespace OpenBinFolder
         /// </summary>
         public OpenBinFolderPackage()
         {
-            
-        }
-
-        #region Package Members
-
-        /// <summary>
-        /// Initialization of the package; this method is called right after the package is sited, so this is the place
-        /// where you can put all the initialization code that rely on services provided by VisualStudio.
-        /// </summary>
-        protected override void Initialize()
-        {
-            base.Initialize();
-
             //get the menu service
             OleMenuCommandService _menuCommandService = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
 
@@ -84,7 +71,5 @@ namespace OpenBinFolder
                 }
             }
         }
-
-        #endregion
     }
 }

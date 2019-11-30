@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="f1c3652d-4d91-4be7-a90c-882ad1a62224" Version="1.1" Language="en-US" Publisher="Ronald Meijboom" />
-        <DisplayName>Open Bin Folder Extension</DisplayName>
+        <Identity Id="VSIXProject1.0a672ce9-731d-49fb-b5f3-1006582c5201" Version="2.0" Language="en-US" Publisher="Ronald Meijboom" />
+        <DisplayName>Open Bin Folder Extension VS 2019</DisplayName>
         <Description xml:space="preserve">Visual Studio 2019 Extension that adds an "Open Bin Folder" to the right click menu of the project for quick access to the buid output folder. Thanks to John McBride for the original version for VS 2015.</Description>
         <MoreInfo>https://github.com/ronaldme/OpenBinFolder-VSExtension</MoreInfo>
         <Icon>OpenBinIcon.png</Icon>
